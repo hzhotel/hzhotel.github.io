@@ -1,104 +1,91 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>梦梵企划</title>
 <meta name="description" content="杭州酒店会展会议的小站">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://hzhotel.github.io//favicon.ico?v=1637928524998">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://hzhotel.github.io//favicon.ico?v=1637929894974">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hzhotel.github.io//styles/main.css">
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://hzhotel.github.io/">梦梵企划</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                活动
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                酒店
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="https://hzhotel.github.io/post/hui-zhan-ye-wei-lai-fa-zhan-qu-shi" class="menu">
-                资讯
-              </a>
-            
-          </li>
-        
-      </ul>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hzhotel.github.io/">
+        <img class="avatar" src="https://hzhotel.github.io//images/avatar.png?v=1637929894974" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hzhotel.github.io/">
+        <h1 class="site-title">梦梵企划</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
-</nav>
+</div>
 
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://hzhotel.github.io/post/hui-zhan-ye-wei-lai-fa-zhan-qu-shi/">会展业未来发展趋势</a>
-    </h2>
-    <p class="article-meta">
-      2021-11-26
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
-    </p>
-    <p class="text-lead">
-      <p>吸取经验 加强风险控制意识</p>
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            活动
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            酒店
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://hzhotel.github.io/post/hui-zhan-ye-wei-lai-fa-zhan-qu-shi/">
+        <h2 class="post-title">会展业未来发展趋势</h2>
+      </a>
+      <div class="post-abstract">
+        <p>吸取经验 加强风险控制意识</p>
 <p>会展行业在展览的风控领域做得较差，几乎没有考虑过公共卫生事件对展览会的影响。而造成展览会中断的因素有很多，公共卫生事件仅仅是其一。但是展览企业对于整个展览能否成功顺利举办的预期过于乐观，从而导致遇到突发事件避之不及从而造成较大的损失，所以加强风险控制很重要，也是会展业所有企业都应该在未来发展中所要加强的管理。</p>
 <p>产业跨界融合</p>
 <p>跨界的融合是未来产业转型的必经之路，也是会展行业未来转型的一个趋势，与此前国家讲的旅游+、互联网+、养老+等，都是跨界的典范，会展企业未来在这条路上要进行不断的尝试和探索。</p>
@@ -106,117 +93,87 @@
 <p>以延伸会展行业目前的一些项目。整个会展行业相对来说是一个大市场，会展举办的理念应用在其他行业有很多场景，从活动举办的思维来说，可以衍生出很多的市场，可以去拓展一些相对专业但目前大家还没有关注到的一些地方去，不要把眼光都瞄准在一些和国家经济发展大势密切相关的行业上。</p>
 <p>数字化营销平台的营建</p>
 
-    </p>
-    <div class="row">
-      <a href="https://hzhotel.github.io/post/hui-zhan-ye-wei-lai-fa-zhan-qu-shi/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-11-26</span>
+        
+      </div>
     </div>
-  </article>
+    
+  </section>
 
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://hzhotel.github.io/post/hello-gridea/">Hello Gridea</a>
-    </h2>
-    <p class="article-meta">
-      2018-12-12
-      
-        <a href="https://hzhotel.github.io/tag/uP1oz2txD/" class="badge warning">
-          Gridea
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+<section class="post-item">
+    <div class="content">
+      <a href="https://hzhotel.github.io/post/hello-gridea/">
+        <h2 class="post-title">Hello Gridea</h2>
+      </a>
+      <div class="post-abstract">
+        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-    </p>
-    <div class="row">
-      <a href="https://hzhotel.github.io/post/hello-gridea/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
-        </div>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
         
-        <div class="row flex-edges">
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://hzhotel.github.io/tag/uP1oz2txD/">
+                Gridea
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hzhotel.github.io/post/hello-gridea/">
+        <div class="feature-container" style="background-image: url('https://hzhotel.github.io//post-images/hello-gridea.png')">
+        </div>
+      </a>
+    
+  </section>
+
+
+<div class="pagination-container">
   
   
 </div>
+
 
       </div>
+
+      <div class="site-footer">
+  <div class="slogan">杭州酒店会展会议的小站</div>
+  <div class="social-container">
+    
       
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://hzhotel.github.io//images/avatar.png?v=1637928524998" class="no-responsive avatar">
-    <div class="text-muted">杭州酒店会展会议的小站</div>
-    <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-        
-      
-    </div>
+    
   </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://hzhotel.github.io/post/hui-zhan-ye-wei-lai-fa-zhan-qu-shi/">会展业未来发展趋势</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://hzhotel.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://hzhotel.github.io/tag/uP1oz2txD/" class="badge secondary">
-          Gridea
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    预订联系18358133068 | <a class="rss" href="https://hzhotel.github.io//atom.xml" target="_blank">RSS</a>
-  </div>
+  预订联系18358133068 | <a class="rss" href="https://hzhotel.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
+
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
