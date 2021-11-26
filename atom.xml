@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hzhotel.github.io/hzhotel/</id>
+    <id>https://hzhotel.github.io</id>
     <title>梦梵企划</title>
-    <updated>2021-11-26T10:42:02.880Z</updated>
+    <updated>2021-11-26T10:48:49.153Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://hzhotel.github.io/hzhotel/"/>
-    <link rel="self" href="https://hzhotel.github.io/hzhotel/atom.xml"/>
+    <link rel="alternate" href="https://hzhotel.github.io"/>
+    <link rel="self" href="https://hzhotel.github.io/atom.xml"/>
     <subtitle>杭州酒店会展会议的小站</subtitle>
-    <logo>https://hzhotel.github.io/hzhotel/images/avatar.png</logo>
-    <icon>https://hzhotel.github.io/hzhotel/favicon.ico</icon>
+    <logo>https://hzhotel.github.io/images/avatar.png</logo>
+    <icon>https://hzhotel.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 梦梵企划</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://hzhotel.github.io/hzhotel/post/hello-gridea/</id>
-        <link href="https://hzhotel.github.io/hzhotel/post/hello-gridea/">
+        <id>https://hzhotel.github.io/post/hello-gridea/</id>
+        <link href="https://hzhotel.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
