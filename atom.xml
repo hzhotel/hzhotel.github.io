@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hzhotel.github.io</id>
+    <id>https://hzhotel.github.io/</id>
     <title>梦梵企划</title>
-    <updated>2021-11-26T11:03:31.866Z</updated>
+    <updated>2021-11-26T11:25:17.872Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://hzhotel.github.io"/>
+    <link rel="alternate" href="https://hzhotel.github.io/"/>
     <link rel="self" href="https://hzhotel.github.io/atom.xml"/>
     <subtitle>杭州酒店会展会议的小站</subtitle>
     <logo>https://hzhotel.github.io/images/avatar.png</logo>
